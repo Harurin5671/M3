@@ -71,7 +71,7 @@ describe('exercise two (involving poem two)', function () {
 				var loggedDoneCall = loggedDoneCalls[0];
 				expect(loggedDoneCall.priorNumBlueCalls).to.equal(2);
 				done();
-			}, 500);
+			}, 200);
 		});
 
 	});
