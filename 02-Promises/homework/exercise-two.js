@@ -193,5 +193,11 @@ function problemE () {
   var fs = require('fs');
   function promisifiedWriteFile (filename, str) {
     // tu código aquí
+    return new Promise((resolve, reject) => {
+      fs.writeFile(file, str, err => {
+        if(err) reject(err);
+        else resolve("Escritura exitosa");
+      })
+    })
   }
 }
