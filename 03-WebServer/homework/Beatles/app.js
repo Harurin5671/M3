@@ -59,5 +59,3 @@ http.createServer((req, res) => {
     res.end("No existe ese Beatle");
   }
 }).listen(3000, "127.0.0.1");
-
-console.log("ya esta");
